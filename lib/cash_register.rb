@@ -47,5 +47,6 @@ class CashRegister
       self.total -= price
     else @transation == []
       self.total -= self.total
+    end
   end
 end
