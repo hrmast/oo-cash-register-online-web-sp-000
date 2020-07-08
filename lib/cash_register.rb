@@ -43,7 +43,9 @@ class CashRegister
   end
 
   def void_last_transaction
-    self.total -= price
-    binding.pry
+    if @transaction != []
+      self.total -= price
+    else @transation == []
+      self.total -= self.total
   end
 end
