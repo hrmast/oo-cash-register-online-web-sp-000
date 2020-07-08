@@ -46,7 +46,7 @@ class CashRegister
     if @transaction != []
       self.total -= price
     else @transation == []
-      self.total -= self.total
+      self.total -= self.total * quantity
     end
   end
 end
